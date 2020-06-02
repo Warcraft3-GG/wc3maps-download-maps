@@ -1,0 +1,40 @@
+{
+  "name": "wc3maps",
+  "version": "0.0.0",
+  "description": "Wc3maps maps download",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "tslint --project tsconfig.json",
+    "lint:fix": "tslint --project tsconfig.json --fix",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Warcraft3-GG/wc3maps-download-maps.git"
+  },
+  "keywords": [
+    "warcraft3",
+    "maps",
+    "download"
+  ],
+  "author": "Julio Sansossio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Warcraft3-GG/wc3maps-download-maps/issues"
+  },
+  "homepage": "https://github.com/Warcraft3-GG/wc3maps-download-maps#readme",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^25.2.3",
+    "@types/jsdom": "^16.2.3",
+    "@types/sha1": "^1.1.2",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {}
+}
