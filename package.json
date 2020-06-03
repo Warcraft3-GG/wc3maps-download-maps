@@ -38,7 +38,6 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "jsdom": "^16.2.2",
     "sha1": "^1.1.1",
     "warcraft3gg-dto": "0.0.4"
   }
