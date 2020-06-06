@@ -43,7 +43,7 @@ export async function getMap (id: number, download?: boolean): Promise<GetMapDTO
       },
       date: new Date(map.first_hosted),
       size: map.size,
-      players: '-'
+      players: map.suggestion
     },
     image,
     file
