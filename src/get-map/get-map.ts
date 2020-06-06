@@ -1,6 +1,7 @@
-import { GetMapDTO } from 'warcraft3gg-dto'
+import { GetMapDTO, GetMapFileDTO } from 'warcraft3gg-dto'
 import { wc3mapsApicall } from '../api/api.wc3maps'
 import { Wc3mapsEnum } from '../wc3maps.enum'
+import { downloadMap } from '../download-map/download-map'
 /**
  * getMap
  * @param id Map id
@@ -17,6 +18,12 @@ export async function getMap (id: number, download?: boolean): Promise<GetMapDTO
   }
   const url = `${Wc3mapsEnum.WEB_URL}/map/${id}/${map.name}`
   const image = `${Wc3mapsEnum.WEB_URL}/maps/${id}/archive/war3map${map.preview ? 'Preview' : 'Map'}.jpg`
+
+  let file: GetMapFileDTO
+  if (download) {
+    file = await downloadMap(id)
+  }
+
   return {
     id: map.id,
     name: map.name,
@@ -38,6 +45,7 @@ export async function getMap (id: number, download?: boolean): Promise<GetMapDTO
       size: map.size,
       players: '-'
     },
-    image
+    image,
+    file
   }
 }
