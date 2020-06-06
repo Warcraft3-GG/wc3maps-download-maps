@@ -1,4 +1,4 @@
-import { totalMaps } from '../src'
+import { totalMaps } from 'wc3maps'
 
 (async () => {
   // Get total maps

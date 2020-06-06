@@ -1,4 +1,4 @@
-import { getMap } from '../src'
+import { getMap } from 'wc3maps'
 
 (async () => {
   // Map: https://wc3maps.com/map/43/DBZ_Tribute_Elite_v2.1c

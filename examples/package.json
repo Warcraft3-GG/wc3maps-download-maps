@@ -1,0 +1,14 @@
+{
+  "name": "wc3maps-examples",
+  "version": "1.0.0",
+  "description": "Wc3maps package examples",
+  "scripts": {},
+  "author": "Julio Sansossio",
+  "license": "ISC",
+  "dependencies": {
+    "wc3maps": "latest"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}

@@ -1,4 +1,4 @@
-import { getMapsIDPerPage } from '../src'
+import { getMapsIDPerPage } from 'wc3maps'
 
 (async () => {
   // Get maps id on page 1
