@@ -1,6 +1,6 @@
 {
   "name": "wc3maps",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Wc3maps maps download",
   "main": "dist/index.js",
   "scripts": {
