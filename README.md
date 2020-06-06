@@ -7,7 +7,7 @@ Get maps information from [wc3maps.com](http://wc3maps.com)
 import { getMap } from 'wc3maps'
 
 (async () => {
-  // Map: https://www.wc3maps.com/maps/43
+  // Map: https://wc3maps.com/map/43/DBZ_Tribute_Elite_v2.1c
   const mapId = 43
   // When download is true, you will receive the map on map.file
   const download = false
