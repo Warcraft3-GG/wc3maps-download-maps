@@ -2,6 +2,7 @@ import { GetMapDTO, GetMapFileDTO } from 'warcraft3gg-dto'
 import { wc3mapsApicall } from '../api/api.wc3maps'
 import { Wc3mapsEnum } from '../wc3maps.enum'
 import { downloadMap } from '../download-map/download-map'
+import { getFormat } from '../utils/get-format/get-format.utils'
 /**
  * getMap
  * @param id Map id
@@ -30,6 +31,7 @@ export async function getMap (id: number, download?: boolean): Promise<GetMapDTO
     url,
     version: map.editor_ver,
     description: map.description,
+    format: getFormat(map.format_version),
     details: {
       category: 'none',
       tileset: map.tileset,
